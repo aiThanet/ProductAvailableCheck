@@ -26,7 +26,7 @@ class Available():
             except Exception as e:
                 self.printLog(str(e))
 
-            time.sleep(self.interval * 2)
+            time.sleep(self.interval * 60)
 
     def start(self):
         res = requests.get(self.url)
